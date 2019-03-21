@@ -1,10 +1,19 @@
 <html>
     <head>
-        var xamlhttp;
-        function getNum(){
-            xmlhttp=new XMLHttpRequest();
-            xmlhttp.
-        }
+        <script>
+      function getNum(){
+               var  xmlhttp;
+              xmlhttp=new XMLHttpRequest();
+              xmlhttp.onreadystatechange=callback;
+                }
+                function callback(){
+               var  xmlhttp;
+             if(xmlhttp.readyState==4 && xmlhttp.status==200)
+             {
+document.getElementById('result').innerHTM=xmlhttp.responsehttp;
+             } 
+              
+                }</script>
     </head>
     <body>
         <div id='result'></div>
